@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * @author zbf
  * @date 2021/12/26
- * @description 空分装置
+ * @description 空分装置  (开机时间)
  */
 
 @Data

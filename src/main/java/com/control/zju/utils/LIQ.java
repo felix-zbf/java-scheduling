@@ -4,7 +4,6 @@ import com.google.ortools.linearsolver.MPConstraint;
 import com.google.ortools.linearsolver.MPSolver;
 import com.google.ortools.linearsolver.MPVariable;
 import lombok.Data;
-import lombok.Value;
 
 /**
  * @author zbf
@@ -63,7 +62,6 @@ public class LIQ {
     }
 
     public void createVar(){
-//        System.out.println(timeLength);
         for (int i=0;i<timeLength;i++){
             totalProduceGan[i] = solver.makeNumVar(0, infinity, "");
             totalProduceGox[i] = solver.makeNumVar(0, infinity, "");

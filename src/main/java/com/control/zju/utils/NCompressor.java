@@ -10,17 +10,21 @@ import lombok.Data;
  * @date 2021/12/26
  * @description 氮压机
  */
+// todo: 氮压机模态切换约束；
 
 @Data
 public class NCompressor {
+    int number;
     int timeLength;
     double lowerBound;
     double upperBound;
     double electricity;
     double infinity = Double.POSITIVE_INFINITY;
     MPSolver solver;
+
     String asuNum;
     String reuseAsu;
+
     MPVariable[] fGas;
     MPVariable[] y;
     MPVariable[] qElectricity;
